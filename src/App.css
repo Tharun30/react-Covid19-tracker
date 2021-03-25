@@ -18,21 +18,17 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
-
 .app__stats {
   display: flex;
   justify-content: space-between;
 }
-
 .app__left {
   flex: 0.9;
 }
-
 .app__right {
   display: flex;
   flex-direction: column;
 }
-
 .app__graphTitle {
   margin-top: 20px;
   margin-bottom: 20px;
