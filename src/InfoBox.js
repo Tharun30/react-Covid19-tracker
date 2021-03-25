@@ -22,7 +22,6 @@ function InfoBox({ title, isRed, isGrey, active, cases, total, ...props }) {
           {props.isloading ? <i className="fa fa-cog fa-spin fa-fw" /> : cases}
         </h2>
 
-
         <Typography className="infoBox__total" color="textSecondary">
           {total} Total
         </Typography>
