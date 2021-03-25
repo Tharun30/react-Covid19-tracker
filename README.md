@@ -9,7 +9,7 @@ This Project is a beginner friendly project I built using React. Some key Aspect
 
 Deployed live on https://covid19-tracker-f1c7e.web.app/ . Check out!
 
-![](Covid_tracker_sample.PNG)
+![](screenshot.PNG)
 
 # Getting Started with Create React App
 
