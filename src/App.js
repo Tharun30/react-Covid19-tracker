@@ -64,8 +64,6 @@ function App() {
         ? "https://disease.sh/v3/covid-19/all"
         : `https://disease.sh/v3/covid-19/countries/${countryCode}`;
 
-    //https://disease.sh/v3/covid-19/all
-    //https://disease.sh/v3/covid-19/countries/[countryCode]
 
     await fetch(url)
       .then((response) => response.json())
@@ -73,7 +71,7 @@ function App() {
         setCountry(countryCode);
         setCountryInfo(data);
         setLoading(false);
-        // console.log([data.countryInfo.lat, data.countryInfo.long]);
+
         countryCode === "worldwide"
           ? setMapCenter([34.80746, -40.4796])
           : setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
@@ -133,7 +131,7 @@ function App() {
             isloading={isLoading}
           />
         </div>
-        {/* Map */}
+
         <Map
           countries={mapCountries}
           center={mapCenter}
@@ -148,8 +146,7 @@ function App() {
           <h3 className="app__graphTitle">WorldWide new {casesType}</h3>
           <LineGraph className="app__graph" casesType={casesType} />
         </CardContent>
-        {/* Table */}
-        {/* Graph */}
+
       </Card>
     </div>
   );
